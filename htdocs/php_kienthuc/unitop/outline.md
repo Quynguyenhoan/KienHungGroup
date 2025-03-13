@@ -1,0 +1,12 @@
+# HỌC PHP CƠ BẢN TRONG 1 VIDEO
+- Cài đặt server ảo xampp
+- Cách tạo file php
+- Xuất chuỗi trên php
+- Biến
+- Kiểu dữ liệu
+- Phép toán
+- Cấu trúc if else
+- Vòng lặp for
+- Nhận dữ liệu từ form Post - Get
+- Làm quen với mảng
+- Vòng lặp foreach xuất dữ liệu mảng

@@ -1,0 +1,86 @@
+.statistics {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.statistics p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.monthly-statistics {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+/* Thong ke hang thang */
+.monthly-statistics p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+.statistics-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.statistics-box {
+  flex: 0 0 calc(20% - 10px);
+  box-sizing: border-box;
+  border: 5px solid #ddd;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.statistics-box h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.statistics-box p {
+  font-size: 14px;
+  margin: 0;
+}
+/* THong ke cac bang */
+.statistics-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.statistics-box {
+  flex: 0 0 calc(20% - 10px);
+  box-sizing: border-box;
+  border: 5px solid #ddd;
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.statistics-box h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.statistics-box p {
+  font-size: 14px;
+  margin: 0;
+}
+.db {
+  text-align: center;
+}

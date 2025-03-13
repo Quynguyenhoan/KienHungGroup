@@ -1,0 +1,297 @@
+# Translation of Themes - Nisarg in Vietnamese
+# This file is distributed under the same license as the Themes - Nisarg package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-10-27 01:48:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Themes - Nisarg\n"
+
+#. Theme Name of the theme
+#, gp-priority: high
+msgid "Nisarg"
+msgstr "Nisarg"
+
+#: functions.php:141
+msgid "collapse child menu"
+msgstr "thu gọn menu con"
+
+#: functions.php:140
+msgid "expand child menu"
+msgstr "mở rộng menu con"
+
+#. translators: 1: Nisarg theme URL.
+#: footer.php:21
+msgid "Theme: %1$s"
+msgstr "Giao diện bởi %1$s"
+
+#: inc/customizer.php:133
+msgid "Full post"
+msgstr "Cả bài"
+
+#: inc/customizer.php:132
+msgid "Post excerpt"
+msgstr "Bài viết ngoại trừ"
+
+#: inc/customizer.php:127
+msgid "How would you like to dipaly a post on post listing page?"
+msgstr "Bạn muốn hiển thị bài viết trên danh sách trang như thế nào?"
+
+#: inc/customizer.php:115
+msgid "Post Options"
+msgstr "Tùy chọn Bài viết"
+
+#: template-parts/content-excerpt.php:14 template-parts/content.php:14
+msgid "Featured"
+msgstr "Nổi bật"
+
+#: template-parts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Không thấy nội dung tìm kiếm. Hãy thử tìm kiếm khác."
+
+#: template-parts/content-none.php:26
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Rất tiếc, không có nội dung nào khớp với yêu cầu tìm kiếm của bạn. Hãy thử lại với các từ khóa khác."
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Bạn đã sẵn sàng đăng bài viết đầu tiên chưa? <a href=\"%1$s\">Hãy bắt đầu tại đây</a>."
+
+#: template-parts/content-none.php:13 template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Không có kết quả"
+
+#: sidebar.php:21
+msgid "Meta"
+msgstr "Meta"
+
+#: sidebar.php:15
+msgid "Archives"
+msgstr "Lưu trữ"
+
+#: searchform.php:14
+msgctxt "submit button"
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Tìm kiếm &hellip;"
+
+#: searchform.php:11 searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Tìm kiếm:"
+
+#. translators: 1: Search Query.
+#: search.php:17
+msgid "Search Results for: %s"
+msgstr "Kết quả tìm kiếm cho từ khóa: %s"
+
+#: inc/template-tags.php:195
+msgid "Edit This Post"
+msgstr "Chỉnh sửa Bài viết này"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:168 inc/template-tags.php:170
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:152
+msgid "% comments"
+msgstr "% bình luận"
+
+#: inc/template-tags.php:152
+msgid "1 comment"
+msgstr "1 bình luận"
+
+#: inc/template-tags.php:152
+msgid "0 Comment"
+msgstr "0 Bình luận"
+
+#: inc/template-tags.php:151
+msgctxt "Used before post author name."
+msgid "Comments"
+msgstr "Bình luận"
+
+#: inc/template-tags.php:134
+msgid "View all posts by"
+msgstr "Xem tất cả bài viết bởi"
+
+#: inc/template-tags.php:88
+msgid "Previous Post"
+msgstr "Bài trước"
+
+#: inc/template-tags.php:111
+msgid "Next Post"
+msgstr "Bài sau"
+
+#: inc/template-tags.php:71
+msgid "Post navigation"
+msgstr "Duyệt bài viết"
+
+#: inc/template-tags.php:24
+msgid "Posts navigation"
+msgstr "Điều hướng các bài viết"
+
+#: inc/customizer.php:352
+msgid "Blue"
+msgstr "Màu xanh da trời"
+
+#: inc/customizer.php:346
+msgid "yellow"
+msgstr "màu vàng"
+
+#: inc/customizer.php:340
+msgid "Red"
+msgstr "Màu đỏ"
+
+#: inc/customizer.php:334
+msgid "Green"
+msgstr "Màu xanh lá cây"
+
+#: inc/customizer.php:328
+msgid "Orange"
+msgstr "Màu da cam"
+
+#: inc/customizer.php:322
+msgid "Pink"
+msgstr "Màu hồng"
+
+#: inc/customizer.php:316
+msgid "Default"
+msgstr "Mặc định"
+
+#: inc/customizer.php:105
+msgid "Applied to highlight elements."
+msgstr "Áp dụng cho phần từ đánh dấu"
+
+#: inc/customizer.php:104
+msgid "Accent Color"
+msgstr "Màu Nhấn"
+
+#: inc/customizer.php:88
+msgid "Accent Color Name"
+msgstr "Tên Màu Nhấn"
+
+#: inc/customizer.php:75
+msgid "Applied to header background."
+msgstr "Áp dụng cho nền Header"
+
+#: inc/customizer.php:74
+msgid "Header Background Color"
+msgstr "Màu nền Header"
+
+#: inc/custom-header.php:44
+msgctxt "header image description"
+msgid "Wood"
+msgstr "Wood"
+
+#: inc/custom-header.php:39
+msgctxt "header image description"
+msgid "buildings"
+msgstr "các tòa nhà"
+
+#: inc/custom-header.php:34 inc/custom-header.php:49
+msgctxt "header image description"
+msgid "food"
+msgstr "Đồ ăn"
+
+#: image.php:101
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Bình luận và lời nhắn đang bị khóa."
+
+#: image.php:99
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Trackbacks bị khóa, nhưng bạn có thể <a class=\"comment-link\" href=\"#respond\" title=\"Đăng một bình luận\">viết một bình luận</a>."
+
+#. translators: %s: tracback URL
+#: image.php:97
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Bình luận bị khóa, nhưng bạn có thể để lại lời nhắn: <a class=\"trackback-link\" href=\"%s\" title=\"Lời nhắn URL cho bài viết của bạn\" rel=\"trackback\">Trackback URL</a>."
+
+#. translators: %s: tracback URL
+#: image.php:93
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Đăng một bình luận\">Đăng một bình luận</a> hoặc để lại lời nhắn: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL cho bài viết của bạn\" rel=\"trackback\">Trackback URL</a>."
+
+#: image.php:85 template-parts/content-aside.php:27
+#: template-parts/content-gallery.php:33 template-parts/content-link.php:32
+#: template-parts/content-page.php:26 template-parts/content-quote.php:34
+#: template-parts/content-status.php:22 template-parts/content.php:43
+msgid "Pages:"
+msgstr "Trang:"
+
+#: image.php:40
+msgid "Next &rarr;"
+msgstr "Trang sau &rarr;"
+
+#: image.php:39
+msgid "&larr; Previous"
+msgstr "&larr; Trang trước"
+
+#: image.php:36 image.php:103 template-parts/content-page.php:33
+msgid "Edit"
+msgstr "Sửa"
+
+#: functions.php:287 template-parts/content-aside.php:24
+#: template-parts/content-gallery.php:30 template-parts/content-link.php:29
+#: template-parts/content-quote.php:31 template-parts/content-status.php:19
+#: template-parts/content.php:38
+msgid " Read More"
+msgstr "Đọc Thêm"
+
+#: functions.php:113
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:55
+msgid "Top Primary Menu"
+msgstr "Top Primary Menu"
+
+#: footer.php:16
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: footer.php:15
+msgid "Proudly Powered by "
+msgstr "Proudly Powered by "
+
+#: comments.php:74 single.php:29
+msgid "Comments are closed."
+msgstr "Bình luận đã bị đóng."
+
+#: comments.php:65
+msgid "Newer Comments"
+msgstr "Các bình luận mới hơn"
+
+#: comments.php:61
+msgid "Older Comments"
+msgstr "Các bình luận trước"
+
+#: comments.php:58
+msgid "Comment navigation"
+msgstr "Điều hướng bình luận"
+
+#: archive.php:17
+msgid "Browsed by"
+msgstr "Duyệt bởi"
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Không có gì ở đây. Bạn có thể thử đường dẫn dưới đây hoặc tìm kiếm?"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Không tìm thấy trang này."
+
+#. Author of the theme
+#, gp-priority: low
+msgid "Falguni Desai"
+msgstr "Falguni Desai"

@@ -1,0 +1,2258 @@
+2024-10-18  7:08:24 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 18648
+2024-10-18  7:08:24 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-18  7:08:24 0 [Note] InnoDB: Uses event mutexes
+2024-10-18  7:08:24 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2024-10-18  7:08:24 0 [Note] InnoDB: Number of pools: 1
+2024-10-18  7:08:24 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-18  7:08:24 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2024-10-18  7:08:24 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-18  7:08:24 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300288
+2024-10-18  7:08:24 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-18  7:08:24 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-18  7:08:24 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-18  7:08:24 0 [Note] InnoDB: Setting file 'C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-18  7:08:24 0 [Note] InnoDB: File 'C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ibtmp1' size is now 12 MB.
+2024-10-18  7:08:24 0 [Note] InnoDB: Waiting for purge to start
+2024-10-18  7:08:24 0 [Note] InnoDB: 10.4.32 started; log sequence number 300297; transaction id 170
+2024-10-18  7:08:24 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ib_buffer_pool
+2024-10-18  7:08:24 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-18  7:08:24 0 [Note] InnoDB: Buffer pool(s) load completed at 241018  7:08:24
+2024-10-18  7:08:24 0 [Note] Server socket created on IP: '::'.
+2024-10-18  7:08:25 0 [Note] Reading of all Master_info entries succeeded
+2024-10-18  7:08:25 0 [Note] Added new Master_info '' to hash table
+2024-10-18  7:08:25 0 [Note] c:\users\acer\documents\lab\projects\wp_pj\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.4.32-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-18 10:10:02 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 10897.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 10:10:02 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 10897.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 10:10:02 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 10833 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 14
+--Thread 10944 has waited at log0log.cc line 1392 for 10897.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 15
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+
+=====================================
+2024-10-18 13:00:45 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 10243 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 14
+--Thread 10944 has waited at log0log.cc line 1392 for 21140.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 15
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+
+=====================================
+2024-10-18 13:01:01 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 16 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21156.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.37 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+Buffer pool hit rate 1000 / 1000, young-making rate 0 / 1000 not 0 / 1000
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.12 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:01:11 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21166.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:01:11 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21166.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:01:21 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21176.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+
+=====================================
+2024-10-18 13:01:41 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21196.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:01:42 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21197.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:01:42 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21197.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:02:01 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21216.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:02:13 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21228.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:02:13 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21228.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:02:21 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21236.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+
+=====================================
+2024-10-18 13:02:41 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21256.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:02:44 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21259.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:02:44 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21259.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:03:01 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21276.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:03:15 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21290.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:03:15 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21290.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:03:21 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21296.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+
+=====================================
+2024-10-18 13:03:41 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21316.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:03:46 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21321.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:03:46 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21321.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:04:01 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21336.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:04:17 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21352.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:04:17 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21352.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:04:21 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21356.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+
+=====================================
+2024-10-18 13:04:41 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21376.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:04:48 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21383.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:04:48 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21383.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:05:01 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21396.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:05:19 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21414.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:05:19 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21414.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:05:21 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21416.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+
+=====================================
+2024-10-18 13:05:41 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21436.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:05:50 0 [Warning] InnoDB: A long semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21445.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+2024-10-18 13:05:50 0 [Note] InnoDB: A semaphore wait:
+--Thread 10944 has waited at log0log.cc line 1392 for 21445.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+InnoDB: ###### Starts InnoDB Monitor for 30 secs to print diagnostic info:
+InnoDB: Pending reads 0, writes 0
+
+=====================================
+2024-10-18 13:06:01 0x4414 INNODB MONITOR OUTPUT
+=====================================
+Per second averages calculated from the last 20 seconds
+-----------------
+BACKGROUND THREAD
+-----------------
+srv_master_thread loops: 0 srv_active, 0 srv_shutdown, 1 srv_idle
+srv_master_thread log flush and writes: 1
+----------
+SEMAPHORES
+----------
+OS WAIT ARRAY INFO: reservation count 17
+--Thread 10944 has waited at log0log.cc line 1392 for 21456.00 seconds the semaphore:
+S-lock on RW-latch at 00007FF7CB5B41D0 created in file log0log.cc line 579
+a writer (thread id 0) has reserved it in mode  exclusive
+number of readers 0, waiters flag 1, lock_word: 0
+Last time write locked in file log0log.cc line 1342
+OS WAIT ARRAY INFO: signal count 13
+RW-shared spins 74, rounds 298, OS waits 2
+RW-excl spins 12, rounds 33, OS waits 0
+RW-sx spins 0, rounds 0, OS waits 0
+Spin rounds per wait: 4.03 RW-shared, 2.75 RW-excl, 0.00 RW-sx
+------------
+TRANSACTIONS
+------------
+Trx id counter 194
+Purge done for trx's n:o < 194 undo n:o < 0 state: running but idle
+History list length 73
+LIST OF TRANSACTIONS FOR EACH SESSION:
+--------
+FILE I/O
+--------
+I/O thread 0 state: native aio handle (insert buffer thread)
+I/O thread 1 state: native aio handle (log thread)
+I/O thread 2 state: native aio handle (read thread)
+I/O thread 3 state: native aio handle (read thread)
+I/O thread 4 state: native aio handle (read thread)
+I/O thread 5 state: native aio handle (read thread)
+I/O thread 6 state: native aio handle (write thread)
+I/O thread 7 state: native aio handle (write thread)
+I/O thread 8 state: native aio handle (write thread)
+I/O thread 9 state: native aio handle (write thread)
+Pending normal aio reads: [0, 0, 0, 0] , aio writes: [0, 0, 0, 0] ,
+ ibuf aio reads:, log i/o's:, sync i/o's:
+Pending flushes (fsync) log: 0; buffer pool: 0
+326 OS file reads, 148 OS file writes, 14 OS fsyncs
+0.00 reads/s, 0 avg bytes/read, 0.00 writes/s, 0.00 fsyncs/s
+-------------------------------------
+INSERT BUFFER AND ADAPTIVE HASH INDEX
+-------------------------------------
+Ibuf: size 1, free list len 0, seg size 2, 0 merges
+merged operations:
+ insert 0, delete mark 0, delete 0
+discarded operations:
+ insert 0, delete mark 0, delete 0
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 1 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+Hash table size 4441, node heap has 0 buffer(s)
+0.00 hash searches/s, 0.00 non-hash searches/s
+---
+LOG
+---
+Log sequence number 300896
+Log flushed up to   300896
+Pages flushed up to 300896
+Last checkpoint at  300288
+0 pending log flushes, 1 pending chkp writes
+15 log i/o's done, 0.00 log i/o's/second
+----------------------
+BUFFER POOL AND MEMORY
+----------------------
+Total large memory allocated 33554432
+Dictionary memory allocated 77624
+Buffer pool size   1003
+Free buffers       746
+Database pages     256
+Old database pages 0
+Modified db pages  0
+Percent of dirty pages(LRU & free pages): 0.000
+Max dirty pages percent: 75.000
+Pending reads 0
+Pending writes: LRU 0, flush list 0, single page 0
+Pages made young 0, not young 0
+0.00 youngs/s, 0.00 non-youngs/s
+Pages read 290, created 131, written 137
+0.00 reads/s, 0.00 creates/s, 0.00 writes/s
+No buffer pool page gets since the last printout
+Pages read ahead 0.00/s, evicted without access 0.00/s, Random read ahead 0.00/s
+LRU len: 256, unzip_LRU len: 0
+I/O sum[0]:cur[0], unzip sum[0]:cur[0]
+--------------
+ROW OPERATIONS
+--------------
+0 queries inside InnoDB, 0 queries in queue
+0 read views open inside InnoDB
+Process ID=18648, Main thread ID=10944, state: making checkpoint
+Number of rows inserted 0, updated 2, deleted 0, read 17
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+Number of system rows inserted 0, updated 0, deleted 0, read 0
+0.00 inserts/s, 0.00 updates/s, 0.00 deletes/s, 0.00 reads/s
+----------------------------
+END OF INNODB MONITOR OUTPUT
+============================
+InnoDB: ###### Diagnostic info printed to the standard error stream
+2024-10-18 13:06:20 0 [ERROR] [FATAL] InnoDB: Semaphore wait has lasted > 600 seconds. We intentionally crash the server because it appears to be hung.
+241018 13:06:20 [ERROR] mysqld got exception 0x80000003 ;
+Sorry, we probably made a mistake, and this is a bug.
+
+Your assistance in bug reporting will enable us to fix this for the next release.
+To report this bug, see https://mariadb.com/kb/en/reporting-bugs
+
+We will try our best to scrape up some info that will hopefully help
+diagnose the problem, but since we have already crashed, 
+something is definitely wrong and this may fail.
+
+Server version: 10.4.32-MariaDB source revision: c4143f909528e3fab0677a28631d10389354c491
+key_buffer_size=16777216
+read_buffer_size=262144
+max_used_connections=2
+max_threads=65537
+thread_count=5
+It is possible that mysqld could use up to 
+key_buffer_size + (read_buffer_size + sort_buffer_size)*max_threads = 20304 K  bytes of memory
+Hope that's ok; if not, decrease some variables in the equation.
+
+Thread pointer: 0x0
+Attempting backtrace. You can use the following information to find out
+where mysqld died. If you see no messages after this, something went
+terribly wrong...
+mysqld.exe!my_parameter_handler()
+ucrtbase.dll!raise()
+ucrtbase.dll!abort()
+mysqld.exe!??$_Construct@$00PEBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXQEBD_K@Z()
+mysqld.exe!pthread_dummy()
+KERNEL32.DLL!BaseThreadInitThunk()
+ntdll.dll!RtlUserThreadStart()
+The manual page at https://mariadb.com/kb/en/how-to-produce-a-full-stack-trace-for-mariadbd/ contains
+information that should help you find out what is causing the crash.
+Writing a core file at C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data
+Minidump written to C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\mysqld.dmp
+2024-10-18 13:08:43 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 20332
+2024-10-18 13:08:43 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-18 13:08:43 0 [Note] InnoDB: Uses event mutexes
+2024-10-18 13:08:43 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2024-10-18 13:08:43 0 [Note] InnoDB: Number of pools: 1
+2024-10-18 13:08:43 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-18 13:08:43 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2024-10-18 13:08:43 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-18 13:08:43 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=300288
+2024-10-18 13:08:43 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=194] with future log sequence number 300876
+2024-10-18 13:08:43 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=16, page number=3] with future log sequence number 300896
+2024-10-18 13:08:43 0 [Warning] InnoDB: Ignoring a doublewrite copy of page [page id: space=0, page number=331] with future log sequence number 300876
+2024-10-18 13:08:43 0 [ERROR] InnoDB: Page [page id: space=0, page number=193] log sequence number 300655 is in the future! Current system log sequence number 300306.
+2024-10-18 13:08:43 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-10-18 13:08:43 0 [ERROR] InnoDB: Page [page id: space=0, page number=330] log sequence number 300655 is in the future! Current system log sequence number 300306.
+2024-10-18 13:08:43 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-10-18 13:08:43 0 [ERROR] InnoDB: Page [page id: space=0, page number=194] log sequence number 300876 is in the future! Current system log sequence number 300306.
+2024-10-18 13:08:43 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-10-18 13:08:43 0 [ERROR] InnoDB: Page [page id: space=0, page number=331] log sequence number 300876 is in the future! Current system log sequence number 300306.
+2024-10-18 13:08:43 0 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-10-18 13:08:43 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-18 13:08:43 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-18 13:08:43 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-18 13:08:43 0 [Note] InnoDB: Setting file 'C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-18 13:08:43 0 [Note] InnoDB: File 'C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ibtmp1' size is now 12 MB.
+2024-10-18 13:08:43 0 [Note] InnoDB: Waiting for purge to start
+2024-10-18 13:08:43 3 [ERROR] InnoDB: Page [page id: space=16, page number=3] log sequence number 300896 is in the future! Current system log sequence number 300306.
+2024-10-18 13:08:43 3 [ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+2024-10-18 13:08:43 0 [Note] InnoDB: 10.4.32 started; log sequence number 300297; transaction id 195
+2024-10-18 13:08:43 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ib_buffer_pool
+2024-10-18 13:08:43 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-18 13:08:43 0 [Note] InnoDB: Buffer pool(s) load completed at 241018 13:08:43
+2024-10-18 13:08:43 0 [Note] Server socket created on IP: '::'.
+2024-10-20 20:00:42 0 [Note] Starting MariaDB 10.4.32-MariaDB source revision c4143f909528e3fab0677a28631d10389354c491 as process 11260
+2024-10-20 20:00:42 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-20 20:00:42 0 [Note] InnoDB: Uses event mutexes
+2024-10-20 20:00:42 0 [Note] InnoDB: Compressed tables use zlib 1.3
+2024-10-20 20:00:42 0 [Note] InnoDB: Number of pools: 1
+2024-10-20 20:00:42 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-20 20:00:42 0 [Note] InnoDB: Initializing buffer pool, total size = 16M, instances = 1, chunk size = 16M
+2024-10-20 20:00:42 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-20 20:00:42 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=7363647
+2024-10-20 20:00:42 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-20 20:00:42 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-20 20:00:42 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-20 20:00:42 0 [Note] InnoDB: Setting file 'C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-20 20:00:42 0 [Note] InnoDB: File 'C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ibtmp1' size is now 12 MB.
+2024-10-20 20:00:42 0 [Note] InnoDB: Waiting for purge to start
+2024-10-20 20:00:42 0 [Note] InnoDB: 10.4.32 started; log sequence number 7363656; transaction id 2484
+2024-10-20 20:00:42 0 [Note] InnoDB: Loading buffer pool(s) from C:\Users\ACER\Documents\lab\Projects\WP_PJ\mysql\data\ib_buffer_pool
+2024-10-20 20:00:42 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-20 20:00:42 0 [Note] InnoDB: Buffer pool(s) load completed at 241020 20:00:42
+2024-10-20 20:00:42 0 [Note] Server socket created on IP: '::'.
